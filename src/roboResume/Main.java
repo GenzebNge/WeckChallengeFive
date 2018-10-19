@@ -130,18 +130,4 @@ public class Main {
         }while (addNePerson.equalsIgnoreCase("yes"));
     }
 
-    private static Duty addDutyForExperience(Scanner keyBord, Duty newDuty, ArrayList<Duty>allDuties) {
-        Duty foundDuty = null;
-        String yap ="";
-        do {
-            System.out.println("Enter Duty");
-            String inputDuty = keyBord.nextLine();
-            newDuty.setDescription(inputDuty);
-            allDuties.add(newDuty);
-            System.out.println("Do you want to add More Duty? Yap/No");
-            yap = keyBord.nextLine();
-
-        }while (yap.equalsIgnoreCase("yes"));
-        return  foundDuty;
-    }
 }
